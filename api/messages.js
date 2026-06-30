@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: { message: 'Method Not Allowed' } });
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = 'sk-ant-api03-KttJuB73y9977AIfmI0EsU9GNL4px-D8G-oy70XebooyFyhDoaltudmRzba8hePfHWLy7UkU7j91b6sopgUw-gwiQqAAA';
   if (!apiKey) {
     return res.status(500).json({ error: { message: 'ANTHROPIC_API_KEY 환경변수가 설정되지 않았습니다.' } });
   }
